@@ -1,0 +1,12 @@
+<h1 id="composto">Calculadora de Juros Compostos</h1>
+
+<p>
+  Capital: <input type="number" [(ngModel)]="capital" /> <br />
+  Taxa ao mês: <input type="number" [(ngModel)]="indice" /> <br />
+  Quantidade de meses: <input type="number" [(ngModel)]="qtMes" /> <br />
+</p>
+
+<input type="button" value="Calcular" (click)="calcular()" /><br /><br />
+
+Resultado: R${{ calculo }}
+<hr />

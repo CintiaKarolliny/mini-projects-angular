@@ -1,0 +1,20 @@
+<h1 id="random">Tabela com números aleatórios</h1>
+
+<p>
+  <input type="number" [(ngModel)]="num" />
+
+  <input type="button" value="Criar" (click)="criar()" />
+</p>
+<br />
+<table border="1">
+  <tr>
+    <th>Posição</th>
+    <th>Número</th>
+  </tr>
+  <tr *ngFor="let num of retornar(); index as i">
+    <td>{{ i + 1 }}º</td>
+    <td>{{ num }}</td>
+  </tr>
+</table>
+
+<hr />

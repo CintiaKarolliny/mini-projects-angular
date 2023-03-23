@@ -1,0 +1,13 @@
+<h1 id="simples">Calculadora de Juros Simples</h1>
+<p>
+  Capital: <input type="number" [(ngModel)]="capital" /> <br />
+
+  Taxa ao mês: <input type="number" [(ngModel)]="indice" /> <br />
+
+  Quantidade de meses: <input type="number" [(ngModel)]="qtMes" />
+</p>
+
+<input type="button" value="Calcular" (click)="calcular()" /> <br /><br />
+
+Resultado: R${{ calculo }}
+<hr />
